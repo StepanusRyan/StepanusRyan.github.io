@@ -1,219 +1,347 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" data-lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stepanus Ryan Andika Candra - Portofolio</title>
-    <link rel="preload" as="style" href="/build/assets/app-D3936pUB.css" /><link rel="modulepreload" as="script" href="/build/assets/app-CiZEzA8M.js" /><link rel="stylesheet" href="/build/assets/app-D3936pUB.css" /><script type="module" src="/build/assets/app-CiZEzA8M.js"></script></head>
-<body class="bg-gray-950 text-white min-h-screen">
+    <title>Stepanus Ryan Andika Candra - Android Developer</title>
 
     
-    <nav class="sticky top-0 z-50 border-b border-gray-800 px-6 py-4 bg-gray-950 backdrop-blur">
-        <div class="max-w-5xl mx-auto flex justify-between items-center">
-            <a href="#home" class="text-xl font-bold text-white">Stepanus Ryan Andika Candra</a>
-            <div class="flex gap-6 text-sm text-gray-400">
-                <a href="#home" class="hover:text-white transition">Home</a>
-                <a href="#projects" class="hover:text-white transition">Projects</a>
-                <a href="#about" class="hover:text-white transition">About</a>
+    <script>
+        (function () {
+            var lang;
+            try { lang = localStorage.getItem('lang'); } catch (e) {}
+            if (lang !== 'id' && lang !== 'en') {
+                lang = (navigator.language || '').toLowerCase().indexOf('id') === 0 ? 'id' : 'en';
+            }
+            document.documentElement.dataset.lang = lang;
+            document.documentElement.lang = lang;
+        })();
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preload" as="style" href="/build/assets/app-CK0gpI59.css" /><link rel="modulepreload" as="script" href="/build/assets/app-CiZEzA8M.js" /><link rel="stylesheet" href="/build/assets/app-CK0gpI59.css" /><script type="module" src="/build/assets/app-CiZEzA8M.js"></script></head>
+<body class="bg-ink text-white min-h-screen antialiased">
+
+    
+    <nav id="navbar" class="fixed inset-x-0 top-0 z-40 transition-colors duration-300">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between gap-6">
+            <a href="#home" class="flex items-center" aria-label="Stepanus Ryan Andika Candra">
+                <span class="w-9 h-9 rounded-xl bg-accent text-ink-deep font-extrabold text-lg flex items-center justify-center">S</span>
+            </a>
+
+            <div class="flex items-center gap-6 sm:gap-10">
+                <div class="hidden sm:flex items-center gap-8 text-lg font-medium">
+                    <a href="#home" class="nav-link" data-section="home"><span class="i18n-id">Beranda</span><span class="i18n-en">Home</span>
+</a>
+                    <a href="#works" class="nav-link" data-section="works"><span class="i18n-id">Karya</span><span class="i18n-en">Works</span>
+</a>
+                    <a href="#about" class="nav-link" data-section="about"><span class="i18n-id">Tentang</span><span class="i18n-en">About</span>
+</a>
+                </div>
+
+                
+                <div class="flex items-center rounded-full border border-ink-line p-1 text-xs font-bold" role="group" aria-label="Language">
+                    <button type="button" class="lang-btn rounded-full px-3 py-1.5 text-muted transition hover:text-white" data-lang-set="id" aria-pressed="false">ID</button>
+                    <button type="button" class="lang-btn rounded-full px-3 py-1.5 text-muted transition hover:text-white" data-lang-set="en" aria-pressed="false">EN</button>
+                </div>
             </div>
         </div>
     </nav>
 
-    
-    <main class="max-w-5xl mx-auto px-6 py-12">
+    <main>
         
 
-<section id="home" class="min-h-screen flex items-center justify-center text-center py-20">
-    <div>
-        <h1 class="text-5xl font-bold mb-4">Hi, Aku Stepanus Ryan Andika Candra 👋</h1>
-        <p class="text-xl text-gray-400 mb-4">Android Developer</p>
-        <p class="text-gray-400 max-w-xl mx-auto mb-10">Saya adalah seorang Software Engineer lulusan Teknik Informatika tahun 2020 yang memiliki spesialisasi di bidang Android Development. Dengan pengalaman profesional selama 4 tahun, saya telah mendalami ekosistem pengembangan aplikasi mobile dari berbagai sudut pandang. Kemampuan teknis saya mencakup pengembangan Native (Java &amp; Kotlin) untuk performa maksimal, hingga solusi Cross-Platform (Flutter &amp; React Native) untuk efisiensi pengembangan. Saya percaya bahwa kode yang bersih dan arsitektur yang kuat adalah kunci untuk membangun aplikasi yang dapat terus berkembang di masa depan.</p>
-        <a href="#projects"
-           class="bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-lg transition font-medium">
-            Lihat Projects →
-        </a>
+<section id="home" class="relative overflow-hidden pt-28 lg:pt-32 lg:min-h-[720px] lg:flex lg:items-end">
+    <div class="max-w-6xl mx-auto px-6 w-full grid lg:grid-cols-12 gap-10 lg:gap-8 items-end">
+
+        
+        <div class="lg:col-span-4 lg:self-center lg:pb-20">
+            <h1 class="text-[2.6rem] sm:text-6xl lg:text-[2.5rem] xl:text-5xl font-bold leading-[1.05] tracking-tight">
+                <span class="sm:whitespace-nowrap">Stepanus Ryan</span><br>
+                <span class="text-white/90 sm:whitespace-nowrap">Andika Candra<span class="text-accent">.</span></span>
+            </h1>
+            <div class="mt-6 h-1 w-12 bg-accent rounded-full"></div>
+            <p class="mt-6 text-muted font-medium"><span class="i18n-id">Android Developer</span><span class="i18n-en">Android Developer</span>
+</p>
+
+            <div class="mt-8 flex items-center gap-5 text-muted">
+                                <a href="https://github.com/StepanusRyan" target="_blank" rel="noopener" class="hover:text-accent transition" aria-label="GitHub">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.7 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5z"/></svg>
+                </a>
+                                                <a href="https://www.linkedin.com/in/stepanus-ryan-andika-candra-988b501b5/" target="_blank" rel="noopener" class="hover:text-accent transition" aria-label="LinkedIn">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.4 20.5h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.4V9h3.4v1.6c.5-.9 1.6-1.8 3.4-1.8 3.6 0 4.2 2.4 4.2 5.4v6.3zM5.3 7.4a2.1 2.1 0 1 1 0-4.1 2.1 2.1 0 0 1 0 4.1zm1.8 13.1H3.6V9h3.5v11.5zM22.2 0H1.8C.8 0 0 .8 0 1.7v20.6c0 .9.8 1.7 1.8 1.7h20.4c1 0 1.8-.8 1.8-1.7V1.7C24 .8 23.2 0 22.2 0z"/></svg>
+                </a>
+                                                <a href="mailto:stepanus.ryan97@gmail.com" class="hover:text-accent transition" aria-label="Email">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+                </a>
+                            </div>
+        </div>
+
+        
+        <div class="lg:col-span-4 relative mx-auto w-full max-w-sm lg:max-w-none">
+            <div class="absolute -left-4 top-10 bottom-0 w-2/3 bg-accent/90 rounded-t-3xl" aria-hidden="true"></div>
+            <div class="relative rounded-t-3xl overflow-hidden shadow-2xl">
+                <img src="/images/profile/profile.jpg" alt="Stepanus Ryan Andika Candra"
+                     class="w-full aspect-[3/4] object-cover object-center">
+                <div class="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-ink to-transparent"></div>
+            </div>
+        </div>
+
+        
+        <div class="lg:col-span-4 lg:self-center lg:pb-20">
+            <span class="eyebrow"><span class="i18n-id">Perkenalan</span><span class="i18n-en">Introduction</span>
+</span>
+            <h2 class="mt-4 text-2xl sm:text-3xl font-semibold leading-snug"><span class="i18n-id">Android Developer yang membangun aplikasi mobile native &amp; cross-platform.</span><span class="i18n-en">Android Developer building native &amp; cross-platform mobile apps.</span>
+</h2>
+            <p class="mt-5 text-muted leading-relaxed"><span class="i18n-id">Berpengalaman dengan Java, Kotlin, Flutter, dan React Native — dari aplikasi kasir hingga solusi bisnis untuk UMKM.</span><span class="i18n-en">Experienced with Java, Kotlin, Flutter and React Native — from point-of-sale apps to business tools for small merchants.</span>
+</p>
+            <a href="#about" class="group mt-8 inline-flex items-center gap-3 font-semibold text-accent">
+                <span class="underline underline-offset-4 decoration-2"><span class="i18n-id">Cerita saya</span><span class="i18n-en">My story</span>
+</span>
+                <span class="transition group-hover:translate-x-1">→</span>
+            </a>
+        </div>
     </div>
 </section>
 
 
-<section id="projects" class="py-20 border-t border-gray-800">
-    <h2 class="text-3xl font-bold mb-2">Projects</h2>
-    <p class="text-gray-400 mb-10">Aplikasi yang sudah aku publish di Play Store</p>
+<section id="works" class="bg-ink-deep py-24">
+    <div class="max-w-6xl mx-auto px-6">
+        <div class="grid lg:grid-cols-12 gap-8 mb-14">
+            <div class="lg:col-span-5">
+                <span class="eyebrow"><span class="i18n-id">Portofolio</span><span class="i18n-en">Portfolio</span>
+</span>
+                <h2 class="mt-4 text-3xl sm:text-4xl font-bold leading-tight">
+                    <span class="i18n-id">Aplikasi yang sudah saya rilis.</span><span class="i18n-en">Apps I&#039;ve shipped.</span>
+                </h2>
+            </div>
+            <p class="lg:col-span-5 lg:col-start-8 self-end text-muted leading-relaxed">
+                <span class="i18n-id">Beberapa aplikasi yang saya kerjakan dan sudah tersedia di Google Play Store.</span><span class="i18n-en">A selection of apps I&#039;ve worked on, all available on the Google Play Store.</span>
+            </p>
+        </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden hover:border-red-600 transition flex flex-col">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <article class="group bg-ink-card rounded-3xl overflow-hidden flex flex-col border border-transparent hover:border-accent/40 transition">
 
-            
-            <div class="p-5 flex items-center gap-3">
-                <img src="/images/icon/restoapp.png"
-                     alt="Resto App POS"
-                     class="w-12 h-12 rounded-xl object-cover shadow-md flex-shrink-0">
-                <div>
-                    <h3 class="text-base font-semibold leading-tight">Resto App POS</h3>
-                    <span class="text-xs text-gray-400 bg-gray-800 px-2 py-0.5 rounded-full">
-                        Productivity
-                    </span>
+                
+                <div class="p-7 pb-5 flex items-start justify-between gap-4">
+                    <h3 class="text-xl font-bold leading-snug">Resto App POS<span class="text-accent">.</span></h3>
+                    <span class="shrink-0 text-xs font-semibold text-muted pt-1.5">Productivity</span>
                 </div>
-            </div>
 
-            
-                        <div class="px-5">
-                <img src="/images/screenshot/restoapp.png"
-                     alt="Screenshot"
-                     class="w-full h-40 object-cover rounded-xl cursor-pointer hover:opacity-80 transition"
-                     onclick="openModal('/images/screenshot/restoapp.png')">
-            </div>
-            
-            
-            <div class="p-5 flex flex-col flex-1">
-                <p class="text-gray-400 text-xs mb-3 flex-1">Resto App POS adalah sebuah aplikasi POS yang bertujuan untuk mempermudah anda dalam mengelola kasir</p>
-
-                <div class="flex flex-wrap gap-1.5 mb-4">
-                                        <span class="bg-gray-800 text-gray-300 text-xs px-2 py-0.5 rounded-full">Android</span>
-                                        <span class="bg-gray-800 text-gray-300 text-xs px-2 py-0.5 rounded-full">Flutter</span>
-                                        <span class="bg-gray-800 text-gray-300 text-xs px-2 py-0.5 rounded-full">SQFlite</span>
+                
+                <div class="mx-7 rounded-2xl overflow-hidden bg-ink relative h-52">
+                                            <img src="/images/screenshot/restoapp.png" alt="Screenshot Resto App POS"
+                             class="w-full h-full object-cover cursor-zoom-in transition duration-500 group-hover:scale-105"
+                             onclick="openModal('/images/screenshot/restoapp.png')">
                                     </div>
 
-                <a href="https://play.google.com/store/apps/details?id=com.stepanusryan.restoapp" target="_blank"
-                   class="inline-flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white text-xs px-4 py-2 rounded-lg transition font-medium w-full">
-                    <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M3.18 23.76a2 2 0 0 0 2.16-.21l12.59-7.25-2.88-2.88-11.87 10.34zM.34 1.02A2 2 0 0 0 0 2.06v19.88a2 2 0 0 0 .34 1.04l.09.09 11.14-11.14v-.27L.43.93l-.09.09zm20.12 9.97-3.02-1.74-3.18 3.18 3.18 3.18 3.04-1.75a2.05 2.05 0 0 0 0-2.87zM5.34.45L17.93 7.7l-2.88 2.88L3.18.24A2 2 0 0 1 5.34.45z"/>
-                    </svg>
-                    Lihat di Play Store
-                </a>
-            </div>
-        </div>
-                <div class="bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden hover:border-red-600 transition flex flex-col">
+                <div class="p-7 flex flex-col flex-1">
+                    <div class="flex items-center gap-3 mb-4">
+                        <img src="/images/icon/restoapp.png" alt="" class="w-9 h-9 rounded-lg object-cover">
+                        <div class="flex flex-wrap gap-1.5">
+                                                        <span class="bg-ink-line text-white/80 text-xs px-2.5 py-1 rounded-full">Android</span>
+                                                        <span class="bg-ink-line text-white/80 text-xs px-2.5 py-1 rounded-full">Flutter</span>
+                                                        <span class="bg-ink-line text-white/80 text-xs px-2.5 py-1 rounded-full">SQFlite</span>
+                                                    </div>
+                    </div>
 
-            
-            <div class="p-5 flex items-center gap-3">
-                <img src="/images/icon/myprofitv2.png"
-                     alt="MyProfit v.2 - Aplikasi Kasir"
-                     class="w-12 h-12 rounded-xl object-cover shadow-md flex-shrink-0">
-                <div>
-                    <h3 class="text-base font-semibold leading-tight">MyProfit v.2 - Aplikasi Kasir</h3>
-                    <span class="text-xs text-gray-400 bg-gray-800 px-2 py-0.5 rounded-full">
-                        Productivity
-                    </span>
+                    <p class="text-muted text-sm leading-relaxed mb-6 flex-1"><span class="i18n-id">Resto App POS adalah sebuah aplikasi POS yang bertujuan untuk mempermudah anda dalam mengelola kasir.</span><span class="i18n-en">Resto App POS is a point-of-sale app designed to make managing your cashier easier.</span>
+</p>
+
+                    <a href="https://play.google.com/store/apps/details?id=com.stepanusryan.restoapp" target="_blank" rel="noopener"
+                       class="inline-flex items-center gap-2 text-sm font-semibold text-accent hover:text-white transition self-start">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M3.18 23.76a2 2 0 0 0 2.16-.21l12.59-7.25-2.88-2.88-11.87 10.34zM.34 1.02A2 2 0 0 0 0 2.06v19.88a2 2 0 0 0 .34 1.04l.09.09 11.14-11.14v-.27L.43.93l-.09.09zm20.12 9.97-3.02-1.74-3.18 3.18 3.18 3.18 3.04-1.75a2.05 2.05 0 0 0 0-2.87zM5.34.45L17.93 7.7l-2.88 2.88L3.18.24A2 2 0 0 1 5.34.45z"/>
+                        </svg>
+                        <span class="i18n-id">Lihat di Play Store</span><span class="i18n-en">View on Play Store</span>
+                        <span>→</span>
+                    </a>
                 </div>
-            </div>
+            </article>
+                        <article class="group bg-ink-card rounded-3xl overflow-hidden flex flex-col border border-transparent hover:border-accent/40 transition">
 
-            
-            
-            
-            <div class="p-5 flex flex-col flex-1">
-                <p class="text-gray-400 text-xs mb-3 flex-1">Aplikasi Kasir Self Order Terbaik untuk UMKM dari InterActive
-            Dengan berbagai kelebihan di atas, kami yakin para pemilik UMKM seperti Anda akan selangkah LEBIH maju, LEBIH mudah, dan LEBIH efisien dalam berjualan. Kalau tahu InterActive MyProfit sehebat ini, ngapain masih diam saja? Langsung sikattt! Download InterActive MyProfit sekarang.</p>
+                
+                <div class="p-7 pb-5 flex items-start justify-between gap-4">
+                    <h3 class="text-xl font-bold leading-snug">MyProfit v.2 - Aplikasi Kasir<span class="text-accent">.</span></h3>
+                    <span class="shrink-0 text-xs font-semibold text-muted pt-1.5">Productivity</span>
+                </div>
 
-                <div class="flex flex-wrap gap-1.5 mb-4">
-                                        <span class="bg-gray-800 text-gray-300 text-xs px-2 py-0.5 rounded-full">Android</span>
-                                        <span class="bg-gray-800 text-gray-300 text-xs px-2 py-0.5 rounded-full">Java</span>
-                                        <span class="bg-gray-800 text-gray-300 text-xs px-2 py-0.5 rounded-full">Firebase</span>
+                
+                <div class="mx-7 rounded-2xl overflow-hidden bg-ink relative h-52">
+                                            <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(245,184,61,0.18),transparent_60%)]"></div>
+                        <div class="relative h-full flex items-center justify-center">
+                            <img src="/images/icon/myprofitv2.png" alt="MyProfit v.2 - Aplikasi Kasir"
+                                 class="w-24 h-24 rounded-3xl object-cover shadow-2xl transition duration-500 group-hover:scale-110">
+                        </div>
                                     </div>
 
-                <a href="https://play.google.com/store/apps/details?id=app.interactive.myprofit" target="_blank"
-                   class="inline-flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white text-xs px-4 py-2 rounded-lg transition font-medium w-full">
-                    <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M3.18 23.76a2 2 0 0 0 2.16-.21l12.59-7.25-2.88-2.88-11.87 10.34zM.34 1.02A2 2 0 0 0 0 2.06v19.88a2 2 0 0 0 .34 1.04l.09.09 11.14-11.14v-.27L.43.93l-.09.09zm20.12 9.97-3.02-1.74-3.18 3.18 3.18 3.18 3.04-1.75a2.05 2.05 0 0 0 0-2.87zM5.34.45L17.93 7.7l-2.88 2.88L3.18.24A2 2 0 0 1 5.34.45z"/>
-                    </svg>
-                    Lihat di Play Store
-                </a>
-            </div>
-        </div>
-                <div class="bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden hover:border-red-600 transition flex flex-col">
+                <div class="p-7 flex flex-col flex-1">
+                    <div class="flex items-center gap-3 mb-4">
+                        <img src="/images/icon/myprofitv2.png" alt="" class="w-9 h-9 rounded-lg object-cover">
+                        <div class="flex flex-wrap gap-1.5">
+                                                        <span class="bg-ink-line text-white/80 text-xs px-2.5 py-1 rounded-full">Android</span>
+                                                        <span class="bg-ink-line text-white/80 text-xs px-2.5 py-1 rounded-full">Java</span>
+                                                        <span class="bg-ink-line text-white/80 text-xs px-2.5 py-1 rounded-full">Firebase</span>
+                                                    </div>
+                    </div>
 
-            
-            <div class="p-5 flex items-center gap-3">
-                <img src="/images/icon/mplite.png"
-                     alt="InterActive MyProfit LITE"
-                     class="w-12 h-12 rounded-xl object-cover shadow-md flex-shrink-0">
-                <div>
-                    <h3 class="text-base font-semibold leading-tight">InterActive MyProfit LITE</h3>
-                    <span class="text-xs text-gray-400 bg-gray-800 px-2 py-0.5 rounded-full">
-                        Productivity
-                    </span>
+                    <p class="text-muted text-sm leading-relaxed mb-6 flex-1"><span class="i18n-id">Aplikasi Kasir Self Order Terbaik untuk UMKM dari InterActive. Dengan berbagai kelebihannya, pemilik UMKM bisa selangkah LEBIH maju, LEBIH mudah, dan LEBIH efisien dalam berjualan.</span><span class="i18n-en">The best self-order cashier app for small businesses from InterActive. With its many advantages, business owners can stay one step ahead — selling more easily and more efficiently.</span>
+</p>
+
+                    <a href="https://play.google.com/store/apps/details?id=app.interactive.myprofit" target="_blank" rel="noopener"
+                       class="inline-flex items-center gap-2 text-sm font-semibold text-accent hover:text-white transition self-start">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M3.18 23.76a2 2 0 0 0 2.16-.21l12.59-7.25-2.88-2.88-11.87 10.34zM.34 1.02A2 2 0 0 0 0 2.06v19.88a2 2 0 0 0 .34 1.04l.09.09 11.14-11.14v-.27L.43.93l-.09.09zm20.12 9.97-3.02-1.74-3.18 3.18 3.18 3.18 3.04-1.75a2.05 2.05 0 0 0 0-2.87zM5.34.45L17.93 7.7l-2.88 2.88L3.18.24A2 2 0 0 1 5.34.45z"/>
+                        </svg>
+                        <span class="i18n-id">Lihat di Play Store</span><span class="i18n-en">View on Play Store</span>
+                        <span>→</span>
+                    </a>
                 </div>
-            </div>
+            </article>
+                        <article class="group bg-ink-card rounded-3xl overflow-hidden flex flex-col border border-transparent hover:border-accent/40 transition">
 
-            
-            
-            
-            <div class="p-5 flex flex-col flex-1">
-                <p class="text-gray-400 text-xs mb-3 flex-1">Aplikasi Kasir dengan desain yang kekinian, enak di semua layar smartphone dan tablet.
+                
+                <div class="p-7 pb-5 flex items-start justify-between gap-4">
+                    <h3 class="text-xl font-bold leading-snug">InterActive MyProfit LITE<span class="text-accent">.</span></h3>
+                    <span class="shrink-0 text-xs font-semibold text-muted pt-1.5">Productivity</span>
+                </div>
 
-Fitur Penjualan simple, bisa bayar dengan QRIS dan EDC BRI.</p>
-
-                <div class="flex flex-wrap gap-1.5 mb-4">
-                                        <span class="bg-gray-800 text-gray-300 text-xs px-2 py-0.5 rounded-full">Android</span>
-                                        <span class="bg-gray-800 text-gray-300 text-xs px-2 py-0.5 rounded-full">Java</span>
-                                        <span class="bg-gray-800 text-gray-300 text-xs px-2 py-0.5 rounded-full">WebView</span>
+                
+                <div class="mx-7 rounded-2xl overflow-hidden bg-ink relative h-52">
+                                            <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(245,184,61,0.18),transparent_60%)]"></div>
+                        <div class="relative h-full flex items-center justify-center">
+                            <img src="/images/icon/mplite.png" alt="InterActive MyProfit LITE"
+                                 class="w-24 h-24 rounded-3xl object-cover shadow-2xl transition duration-500 group-hover:scale-110">
+                        </div>
                                     </div>
 
-                <a href="https://play.google.com/store/apps/details?id=com.interactive.myprofitlite" target="_blank"
-                   class="inline-flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white text-xs px-4 py-2 rounded-lg transition font-medium w-full">
-                    <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M3.18 23.76a2 2 0 0 0 2.16-.21l12.59-7.25-2.88-2.88-11.87 10.34zM.34 1.02A2 2 0 0 0 0 2.06v19.88a2 2 0 0 0 .34 1.04l.09.09 11.14-11.14v-.27L.43.93l-.09.09zm20.12 9.97-3.02-1.74-3.18 3.18 3.18 3.18 3.04-1.75a2.05 2.05 0 0 0 0-2.87zM5.34.45L17.93 7.7l-2.88 2.88L3.18.24A2 2 0 0 1 5.34.45z"/>
-                    </svg>
-                    Lihat di Play Store
-                </a>
-            </div>
-        </div>
-                <div class="bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden hover:border-red-600 transition flex flex-col">
+                <div class="p-7 flex flex-col flex-1">
+                    <div class="flex items-center gap-3 mb-4">
+                        <img src="/images/icon/mplite.png" alt="" class="w-9 h-9 rounded-lg object-cover">
+                        <div class="flex flex-wrap gap-1.5">
+                                                        <span class="bg-ink-line text-white/80 text-xs px-2.5 py-1 rounded-full">Android</span>
+                                                        <span class="bg-ink-line text-white/80 text-xs px-2.5 py-1 rounded-full">Java</span>
+                                                        <span class="bg-ink-line text-white/80 text-xs px-2.5 py-1 rounded-full">WebView</span>
+                                                    </div>
+                    </div>
 
-            
-            <div class="p-5 flex items-center gap-3">
-                <img src="/images/icon/myprofitv3.png"
-                     alt="MyProfit Kasir &amp; Bisnis Pintar"
-                     class="w-12 h-12 rounded-xl object-cover shadow-md flex-shrink-0">
-                <div>
-                    <h3 class="text-base font-semibold leading-tight">MyProfit Kasir &amp; Bisnis Pintar</h3>
-                    <span class="text-xs text-gray-400 bg-gray-800 px-2 py-0.5 rounded-full">
-                        Productivity
-                    </span>
+                    <p class="text-muted text-sm leading-relaxed mb-6 flex-1"><span class="i18n-id">Aplikasi Kasir dengan desain yang kekinian, enak di semua layar smartphone dan tablet. Fitur penjualan simple, bisa bayar dengan QRIS dan EDC BRI.</span><span class="i18n-en">A cashier app with a modern design that looks great on every phone and tablet screen. Simple sales flow, with payments via QRIS and BRI EDC.</span>
+</p>
+
+                    <a href="https://play.google.com/store/apps/details?id=com.interactive.myprofitlite" target="_blank" rel="noopener"
+                       class="inline-flex items-center gap-2 text-sm font-semibold text-accent hover:text-white transition self-start">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M3.18 23.76a2 2 0 0 0 2.16-.21l12.59-7.25-2.88-2.88-11.87 10.34zM.34 1.02A2 2 0 0 0 0 2.06v19.88a2 2 0 0 0 .34 1.04l.09.09 11.14-11.14v-.27L.43.93l-.09.09zm20.12 9.97-3.02-1.74-3.18 3.18 3.18 3.18 3.04-1.75a2.05 2.05 0 0 0 0-2.87zM5.34.45L17.93 7.7l-2.88 2.88L3.18.24A2 2 0 0 1 5.34.45z"/>
+                        </svg>
+                        <span class="i18n-id">Lihat di Play Store</span><span class="i18n-en">View on Play Store</span>
+                        <span>→</span>
+                    </a>
                 </div>
-            </div>
+            </article>
+                        <article class="group bg-ink-card rounded-3xl overflow-hidden flex flex-col border border-transparent hover:border-accent/40 transition">
 
-            
-            
-            
-            <div class="p-5 flex flex-col flex-1">
-                <p class="text-gray-400 text-xs mb-3 flex-1">Kelola bisnis kamu lebih mudah dengan MyProfit aplikasi kasir modern yang dirancang khusus untuk pelaku usaha Indonesia. Dari warung, kafe, restoran, hingga retail, semua bisa dikelola dari satu aplikasi.</p>
+                
+                <div class="p-7 pb-5 flex items-start justify-between gap-4">
+                    <h3 class="text-xl font-bold leading-snug">MyProfit Kasir &amp; Bisnis Pintar<span class="text-accent">.</span></h3>
+                    <span class="shrink-0 text-xs font-semibold text-muted pt-1.5">Productivity</span>
+                </div>
 
-                <div class="flex flex-wrap gap-1.5 mb-4">
-                                        <span class="bg-gray-800 text-gray-300 text-xs px-2 py-0.5 rounded-full">Android</span>
-                                        <span class="bg-gray-800 text-gray-300 text-xs px-2 py-0.5 rounded-full">React Native</span>
+                
+                <div class="mx-7 rounded-2xl overflow-hidden bg-ink relative h-52">
+                                            <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(245,184,61,0.18),transparent_60%)]"></div>
+                        <div class="relative h-full flex items-center justify-center">
+                            <img src="/images/icon/myprofitv3.png" alt="MyProfit Kasir &amp; Bisnis Pintar"
+                                 class="w-24 h-24 rounded-3xl object-cover shadow-2xl transition duration-500 group-hover:scale-110">
+                        </div>
                                     </div>
 
-                <a href="https://play.google.com/store/apps/details?id=com.interactive.myprofitv3" target="_blank"
-                   class="inline-flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white text-xs px-4 py-2 rounded-lg transition font-medium w-full">
-                    <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M3.18 23.76a2 2 0 0 0 2.16-.21l12.59-7.25-2.88-2.88-11.87 10.34zM.34 1.02A2 2 0 0 0 0 2.06v19.88a2 2 0 0 0 .34 1.04l.09.09 11.14-11.14v-.27L.43.93l-.09.09zm20.12 9.97-3.02-1.74-3.18 3.18 3.18 3.18 3.04-1.75a2.05 2.05 0 0 0 0-2.87zM5.34.45L17.93 7.7l-2.88 2.88L3.18.24A2 2 0 0 1 5.34.45z"/>
-                    </svg>
-                    Lihat di Play Store
-                </a>
-            </div>
-        </div>
-            </div>
+                <div class="p-7 flex flex-col flex-1">
+                    <div class="flex items-center gap-3 mb-4">
+                        <img src="/images/icon/myprofitv3.png" alt="" class="w-9 h-9 rounded-lg object-cover">
+                        <div class="flex flex-wrap gap-1.5">
+                                                        <span class="bg-ink-line text-white/80 text-xs px-2.5 py-1 rounded-full">Android</span>
+                                                        <span class="bg-ink-line text-white/80 text-xs px-2.5 py-1 rounded-full">React Native</span>
+                                                    </div>
+                    </div>
+
+                    <p class="text-muted text-sm leading-relaxed mb-6 flex-1"><span class="i18n-id">Kelola bisnis kamu lebih mudah dengan MyProfit, aplikasi kasir modern yang dirancang khusus untuk pelaku usaha Indonesia. Dari warung, kafe, restoran, hingga retail, semua bisa dikelola dari satu aplikasi.</span><span class="i18n-en">Run your business more easily with MyProfit, a modern cashier app built for Indonesian businesses. From food stalls, cafés and restaurants to retail — manage it all from one app.</span>
+</p>
+
+                    <a href="https://play.google.com/store/apps/details?id=com.interactive.myprofitv3" target="_blank" rel="noopener"
+                       class="inline-flex items-center gap-2 text-sm font-semibold text-accent hover:text-white transition self-start">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M3.18 23.76a2 2 0 0 0 2.16-.21l12.59-7.25-2.88-2.88-11.87 10.34zM.34 1.02A2 2 0 0 0 0 2.06v19.88a2 2 0 0 0 .34 1.04l.09.09 11.14-11.14v-.27L.43.93l-.09.09zm20.12 9.97-3.02-1.74-3.18 3.18 3.18 3.18 3.04-1.75a2.05 2.05 0 0 0 0-2.87zM5.34.45L17.93 7.7l-2.88 2.88L3.18.24A2 2 0 0 1 5.34.45z"/>
+                        </svg>
+                        <span class="i18n-id">Lihat di Play Store</span><span class="i18n-en">View on Play Store</span>
+                        <span>→</span>
+                    </a>
+                </div>
+            </article>
+                    </div>
+    </div>
 </section>
 
 
-<section id="about" class="py-20 border-t border-gray-800">
-    <div class="max-w-2xl">
-        <h2 class="text-3xl font-bold mb-6">About Me</h2>
-        <p class="text-gray-400 leading-relaxed mb-10">Saya adalah seorang Software Engineer lulusan Teknik Informatika tahun 2020 yang memiliki spesialisasi di bidang Android Development. Dengan pengalaman profesional selama 4 tahun, saya telah mendalami ekosistem pengembangan aplikasi mobile dari berbagai sudut pandang. Kemampuan teknis saya mencakup pengembangan Native (Java &amp; Kotlin) untuk performa maksimal, hingga solusi Cross-Platform (Flutter &amp; React Native) untuk efisiensi pengembangan. Saya percaya bahwa kode yang bersih dan arsitektur yang kuat adalah kunci untuk membangun aplikasi yang dapat terus berkembang di masa depan.</p>
+<section id="about" class="py-24">
+    <div class="max-w-6xl mx-auto px-6 grid lg:grid-cols-12 gap-14">
 
-        <h3 class="text-lg font-semibold mb-4">Hubungi Aku</h3>
-        <div class="flex flex-wrap gap-3">
-                        <a href="mailto:stepanus.ryan97@gmail.com" class="flex items-center gap-2 bg-gray-800 hover:bg-gray-700 px-5 py-2 rounded-lg text-sm transition">📧 Email</a>
-                                    <a href="https://github.com/StepanusRyan" target="_blank" class="flex items-center gap-2 bg-gray-800 hover:bg-gray-700 px-5 py-2 rounded-lg text-sm transition">🐙 GitHub</a>
-                                    <a href="https://www.linkedin.com/in/stepanus-ryan-andika-candra-988b501b5/" target="_blank" class="flex items-center gap-2 bg-gray-800 hover:bg-gray-700 px-5 py-2 rounded-lg text-sm transition">💼 LinkedIn</a>
-                                                        </div>
+        
+        <div class="lg:col-span-4">
+            <span class="eyebrow"><span class="i18n-id">Kontak</span><span class="i18n-en">Contact</span>
+</span>
+            <h2 class="mt-4 text-2xl sm:text-3xl font-semibold leading-snug">
+                <span class="i18n-id">Punya pertanyaan atau ingin berdiskusi?</span><span class="i18n-en">Any type of query &amp; discussion.</span>
+            </h2>
+            <p class="mt-5 text-muted leading-relaxed">
+                <span class="i18n-id">Terbuka untuk kolaborasi, pekerjaan, atau sekadar ngobrol soal pengembangan aplikasi.</span><span class="i18n-en">Open to collaboration, job opportunities, or just a chat about app development.</span>
+            </p>
+
+            <div class="mt-8 flex flex-col gap-4">
+                                <a href="mailto:stepanus.ryan97@gmail.com" class="group inline-flex items-center gap-3 font-semibold text-accent break-all">
+                    <span class="underline underline-offset-4 decoration-2">stepanus.ryan97@gmail.com</span>
+                    <span class="transition group-hover:translate-x-1">→</span>
+                </a>
+                                <div class="flex gap-3">
+                                        <a href="https://github.com/StepanusRyan" target="_blank" rel="noopener" class="rounded-full border border-ink-line px-5 py-2 text-sm text-muted hover:text-white hover:border-accent transition">GitHub</a>
+                                                            <a href="https://www.linkedin.com/in/stepanus-ryan-andika-candra-988b501b5/" target="_blank" rel="noopener" class="rounded-full border border-ink-line px-5 py-2 text-sm text-muted hover:text-white hover:border-accent transition">LinkedIn</a>
+                                    </div>
+            </div>
+        </div>
+
+        
+        <div class="lg:col-span-7 lg:col-start-6">
+            <span class="eyebrow"><span class="i18n-id">Tentang saya</span><span class="i18n-en">About me</span>
+</span>
+            <blockquote class="mt-4 text-2xl sm:text-3xl font-semibold leading-snug">
+                <span class="i18n-id">Kode yang bersih dan arsitektur yang kuat adalah kunci aplikasi yang terus berkembang.</span><span class="i18n-en">Clean code and solid architecture are the key to apps that keep growing.</span>
+            </blockquote>
+            <p class="mt-6 text-muted leading-relaxed"><span class="i18n-id">Saya adalah seorang Software Engineer lulusan Teknik Informatika tahun 2020 yang memiliki spesialisasi di bidang Android Development. Dengan pengalaman profesional selama 4 tahun, saya telah mendalami ekosistem pengembangan aplikasi mobile dari berbagai sudut pandang. Kemampuan teknis saya mencakup pengembangan Native (Java &amp; Kotlin) untuk performa maksimal, hingga solusi Cross-Platform (Flutter &amp; React Native) untuk efisiensi pengembangan. Saya percaya bahwa kode yang bersih dan arsitektur yang kuat adalah kunci untuk membangun aplikasi yang dapat terus berkembang di masa depan.</span><span class="i18n-en">I am a Software Engineer who graduated in Informatics Engineering in 2020, specializing in Android development. Over 4 years of professional experience, I have explored the mobile app ecosystem from many angles. My technical skills range from Native development (Java &amp; Kotlin) for maximum performance to Cross-Platform solutions (Flutter &amp; React Native) for development efficiency. I believe clean code and solid architecture are the key to building apps that can keep growing in the future.</span>
+</p>
+
+            <div class="mt-12 flex flex-wrap gap-x-14 gap-y-8">
+                <div class="flex items-center gap-4">
+                    <span class="text-6xl font-bold text-accent leading-none">4+</span>
+                    <span class="text-sm font-medium text-white/80 leading-tight"><span class="i18n-id">Tahun</span><span class="i18n-en">Years of</span>
+<br><span class="i18n-id">pengalaman</span><span class="i18n-en">experience</span>
+</span>
+                </div>
+                <div class="flex items-center gap-4">
+                    <span class="text-6xl font-bold text-accent leading-none">4</span>
+                    <span class="text-sm font-medium text-white/80 leading-tight"><span class="i18n-id">Aplikasi</span><span class="i18n-en">Apps on</span>
+<br><span class="i18n-id">di Play Store</span><span class="i18n-en">Play Store</span>
+</span>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
 
 <div id="modal" class="fixed inset-0 bg-black/80 z-50 hidden items-center justify-center p-4" onclick="closeModal()">
-    <img id="modal-img" src="" alt="Screenshot" class="max-h-screen max-w-sm rounded-2xl shadow-2xl">
+    <img id="modal-img" onclick="event.stopPropagation()" src="" alt="Screenshot" class="max-h-[90vh] max-w-sm rounded-2xl shadow-2xl">
 </div>
 
 <script>
@@ -230,9 +358,54 @@ function closeModal() {
     </main>
 
     
-    <footer class="border-t border-gray-800 text-center text-gray-500 text-sm py-6">
-        © 2026 Stepanus Ryan Andika Candra. Built with Laravel.
+    <footer class="bg-ink-deep border-t border-ink-line text-center text-muted text-sm py-8">
+        © 2026 Stepanus Ryan Andika Candra.
     </footer>
 
+    <script>
+        (function () {
+            var root = document.documentElement;
+            var buttons = document.querySelectorAll('[data-lang-set]');
+
+            function apply(lang) {
+                root.dataset.lang = lang;
+                root.lang = lang;
+                buttons.forEach(function (b) {
+                    b.setAttribute('aria-pressed', b.dataset.langSet === lang ? 'true' : 'false');
+                });
+            }
+
+            buttons.forEach(function (b) {
+                b.addEventListener('click', function () {
+                    apply(b.dataset.langSet);
+                    try { localStorage.setItem('lang', b.dataset.langSet); } catch (e) {}
+                });
+            });
+            apply(root.dataset.lang);
+
+            // Latar navbar muncul setelah scroll.
+            var nav = document.getElementById('navbar');
+            function onScroll() {
+                var scrolled = window.scrollY > 10;
+                nav.classList.toggle('bg-ink-deep/90', scrolled);
+                nav.classList.toggle('backdrop-blur', scrolled);
+                nav.classList.toggle('shadow-lg', scrolled);
+            }
+            window.addEventListener('scroll', onScroll, { passive: true });
+            onScroll();
+
+            // Titik kuning di bawah menu mengikuti section yang sedang terlihat.
+            var links = document.querySelectorAll('.nav-link');
+            var observer = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (!entry.isIntersecting) return;
+                    links.forEach(function (l) {
+                        l.classList.toggle('active', l.dataset.section === entry.target.id);
+                    });
+                });
+            }, { rootMargin: '-45% 0px -50% 0px' });
+            document.querySelectorAll('main section[id]').forEach(function (s) { observer.observe(s); });
+        })();
+    </script>
 </body>
 </html>

@@ -21,7 +21,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="preload" as="style" href="/build/assets/app-CK0gpI59.css" /><link rel="modulepreload" as="script" href="/build/assets/app-CiZEzA8M.js" /><link rel="stylesheet" href="/build/assets/app-CK0gpI59.css" /><script type="module" src="/build/assets/app-CiZEzA8M.js"></script></head>
+    <script type="module" src="http://[::1]:5173/@vite/client"></script><link rel="stylesheet" href="http://[::1]:5173/resources/css/app.css" /><script type="module" src="http://[::1]:5173/resources/js/app.js"></script></head>
 <body class="bg-ink text-white min-h-screen antialiased">
 
     
@@ -53,14 +53,15 @@
     <main>
         
 
-<section id="home" class="relative overflow-hidden pt-28 lg:pt-32 lg:min-h-[720px] lg:flex lg:items-end">
-    <div class="max-w-6xl mx-auto px-6 w-full grid lg:grid-cols-12 gap-10 lg:gap-8 items-end">
+
+<section id="home" class="relative overflow-hidden pt-24 lg:pt-28 lg:flex lg:flex-col lg:min-h-[min(100svh,700px)]">
+    <div class="max-w-6xl mx-auto px-6 w-full lg:flex-1 grid lg:grid-cols-[1fr_1.2fr_1fr] gap-10 lg:gap-8 items-start">
 
         
-        <div class="lg:col-span-4 lg:self-center lg:pb-20">
+        <div class="relative z-10 lg:pb-8">
             <h1 class="text-[2.6rem] sm:text-6xl lg:text-[2.5rem] xl:text-5xl font-bold leading-[1.05] tracking-tight">
                 <span class="sm:whitespace-nowrap">Stepanus Ryan</span><br>
-                <span class="text-white/90 sm:whitespace-nowrap">Andika Candra<span class="text-accent">.</span></span>
+                <span class="text-white/90 sm:whitespace-nowrap">Andika Candra<span class="text-accent"></span></span>
             </h1>
             <div class="mt-6 h-1 w-12 bg-accent rounded-full"></div>
             <p class="mt-6 text-muted font-medium"><span class="i18n-id">Android Developer</span><span class="i18n-en">Android Developer</span>
@@ -80,22 +81,24 @@
         </div>
 
         
-        <div class="lg:col-span-4 relative mx-auto w-full max-w-sm lg:max-w-none">
+        
+        <div class="lg:self-stretch relative mx-auto w-full max-w-sm lg:max-w-none">
+            <div class="pointer-events-none absolute -inset-16 rounded-full bg-accent/15 blur-3xl" aria-hidden="true"></div>
             <div class="absolute -left-4 top-10 bottom-0 w-2/3 bg-accent/90 rounded-t-3xl" aria-hidden="true"></div>
-            <div class="relative rounded-t-3xl overflow-hidden shadow-2xl">
+            <div class="relative lg:h-full rounded-t-3xl overflow-hidden shadow-2xl">
                 <img src="/images/profile/profile.jpg" alt="Stepanus Ryan Andika Candra"
-                     class="w-full aspect-[3/4] object-cover object-center">
+                     class="w-full aspect-square lg:h-full object-cover object-[center_55%]">
                 <div class="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-ink to-transparent"></div>
             </div>
         </div>
 
         
-        <div class="lg:col-span-4 lg:self-center lg:pb-20">
+        <div class="relative z-10 lg:pb-8">
             <span class="eyebrow"><span class="i18n-id">Perkenalan</span><span class="i18n-en">Introduction</span>
 </span>
             <h2 class="mt-4 text-2xl sm:text-3xl font-semibold leading-snug"><span class="i18n-id">Android Developer yang membangun aplikasi mobile native &amp; cross-platform.</span><span class="i18n-en">Android Developer building native &amp; cross-platform mobile apps.</span>
 </h2>
-            <p class="mt-5 text-muted leading-relaxed"><span class="i18n-id">Berpengalaman dengan Java, Kotlin, Flutter, dan React Native — dari aplikasi kasir hingga solusi bisnis untuk UMKM.</span><span class="i18n-en">Experienced with Java, Kotlin, Flutter and React Native — from point-of-sale apps to business tools for small merchants.</span>
+            <p class="mt-5 text-muted font-medium leading-relaxed"><span class="i18n-id">Berpengalaman dengan Java, Kotlin, Flutter, dan React Native — dari aplikasi kasir hingga solusi bisnis untuk UMKM.</span><span class="i18n-en">Experienced with Java, Kotlin, Flutter and React Native — from point-of-sale apps to business tools for small merchants.</span>
 </p>
             <a href="#about" class="group mt-8 inline-flex items-center gap-3 font-semibold text-accent">
                 <span class="underline underline-offset-4 decoration-2"><span class="i18n-id">Cerita saya</span><span class="i18n-en">My story</span>
@@ -107,8 +110,9 @@
 </section>
 
 
-<section id="works" class="bg-ink-deep py-24">
-    <div class="max-w-6xl mx-auto px-6">
+<section id="works" class="relative overflow-hidden bg-ink-deep pt-28 pb-24">
+    <div class="pointer-events-none absolute -top-40 -right-40 w-[32rem] h-[32rem] rounded-full bg-accent/10 blur-3xl" aria-hidden="true"></div>
+    <div class="relative max-w-6xl mx-auto px-6">
         <div class="grid lg:grid-cols-12 gap-8 mb-14">
             <div class="lg:col-span-5">
                 <span class="eyebrow"><span class="i18n-id">Portofolio</span><span class="i18n-en">Portfolio</span>
@@ -117,7 +121,7 @@
                     <span class="i18n-id">Aplikasi yang sudah saya rilis.</span><span class="i18n-en">Apps I&#039;ve shipped.</span>
                 </h2>
             </div>
-            <p class="lg:col-span-5 lg:col-start-8 self-end text-muted leading-relaxed">
+            <p class="lg:col-span-5 lg:col-start-8 self-end text-muted font-medium leading-relaxed">
                 <span class="i18n-id">Beberapa aplikasi yang saya kerjakan dan sudah tersedia di Google Play Store.</span><span class="i18n-en">A selection of apps I&#039;ve worked on, all available on the Google Play Store.</span>
             </p>
         </div>
@@ -148,7 +152,7 @@
                                                     </div>
                     </div>
 
-                    <p class="text-muted text-sm leading-relaxed mb-6 flex-1"><span class="i18n-id">Resto App POS adalah sebuah aplikasi POS yang bertujuan untuk mempermudah anda dalam mengelola kasir.</span><span class="i18n-en">Resto App POS is a point-of-sale app designed to make managing your cashier easier.</span>
+                    <p class="text-muted text-sm font-medium leading-relaxed mb-6 flex-1"><span class="i18n-id">Resto App POS adalah sebuah aplikasi POS yang bertujuan untuk mempermudah anda dalam mengelola kasir.</span><span class="i18n-en">Resto App POS is a point-of-sale app designed to make managing your cashier easier.</span>
 </p>
 
                     <a href="https://play.google.com/store/apps/details?id=com.stepanusryan.restoapp" target="_blank" rel="noopener"
@@ -188,7 +192,7 @@
                                                     </div>
                     </div>
 
-                    <p class="text-muted text-sm leading-relaxed mb-6 flex-1"><span class="i18n-id">Aplikasi Kasir Self Order Terbaik untuk UMKM dari InterActive. Dengan berbagai kelebihannya, pemilik UMKM bisa selangkah LEBIH maju, LEBIH mudah, dan LEBIH efisien dalam berjualan.</span><span class="i18n-en">The best self-order cashier app for small businesses from InterActive. With its many advantages, business owners can stay one step ahead — selling more easily and more efficiently.</span>
+                    <p class="text-muted text-sm font-medium leading-relaxed mb-6 flex-1"><span class="i18n-id">Aplikasi Kasir Self Order Terbaik untuk UMKM dari InterActive. Dengan berbagai kelebihannya, pemilik UMKM bisa selangkah LEBIH maju, LEBIH mudah, dan LEBIH efisien dalam berjualan.</span><span class="i18n-en">The best self-order cashier app for small businesses from InterActive. With its many advantages, business owners can stay one step ahead — selling more easily and more efficiently.</span>
 </p>
 
                     <a href="https://play.google.com/store/apps/details?id=app.interactive.myprofit" target="_blank" rel="noopener"
@@ -228,7 +232,7 @@
                                                     </div>
                     </div>
 
-                    <p class="text-muted text-sm leading-relaxed mb-6 flex-1"><span class="i18n-id">Aplikasi Kasir dengan desain yang kekinian, enak di semua layar smartphone dan tablet. Fitur penjualan simple, bisa bayar dengan QRIS dan EDC BRI.</span><span class="i18n-en">A cashier app with a modern design that looks great on every phone and tablet screen. Simple sales flow, with payments via QRIS and BRI EDC.</span>
+                    <p class="text-muted text-sm font-medium leading-relaxed mb-6 flex-1"><span class="i18n-id">Aplikasi Kasir dengan desain yang kekinian, enak di semua layar smartphone dan tablet. Fitur penjualan simple, bisa bayar dengan QRIS dan EDC BRI.</span><span class="i18n-en">A cashier app with a modern design that looks great on every phone and tablet screen. Simple sales flow, with payments via QRIS and BRI EDC.</span>
 </p>
 
                     <a href="https://play.google.com/store/apps/details?id=com.interactive.myprofitlite" target="_blank" rel="noopener"
@@ -267,7 +271,7 @@
                                                     </div>
                     </div>
 
-                    <p class="text-muted text-sm leading-relaxed mb-6 flex-1"><span class="i18n-id">Kelola bisnis kamu lebih mudah dengan MyProfit, aplikasi kasir modern yang dirancang khusus untuk pelaku usaha Indonesia. Dari warung, kafe, restoran, hingga retail, semua bisa dikelola dari satu aplikasi.</span><span class="i18n-en">Run your business more easily with MyProfit, a modern cashier app built for Indonesian businesses. From food stalls, cafés and restaurants to retail — manage it all from one app.</span>
+                    <p class="text-muted text-sm font-medium leading-relaxed mb-6 flex-1"><span class="i18n-id">Kelola bisnis kamu lebih mudah dengan MyProfit, aplikasi kasir modern yang dirancang khusus untuk pelaku usaha Indonesia. Dari warung, kafe, restoran, hingga retail, semua bisa dikelola dari satu aplikasi.</span><span class="i18n-en">Run your business more easily with MyProfit, a modern cashier app built for Indonesian businesses. From food stalls, cafés and restaurants to retail — manage it all from one app.</span>
 </p>
 
                     <a href="https://play.google.com/store/apps/details?id=com.interactive.myprofitv3" target="_blank" rel="noopener"
@@ -285,8 +289,9 @@
 </section>
 
 
-<section id="about" class="py-24">
-    <div class="max-w-6xl mx-auto px-6 grid lg:grid-cols-12 gap-14">
+<section id="about" class="relative overflow-hidden pt-28 pb-24">
+    <div class="pointer-events-none absolute -bottom-48 -left-40 w-[32rem] h-[32rem] rounded-full bg-accent/10 blur-3xl" aria-hidden="true"></div>
+    <div class="relative max-w-6xl mx-auto px-6 grid lg:grid-cols-12 gap-14">
 
         
         <div class="lg:col-span-4">
@@ -295,7 +300,7 @@
             <h2 class="mt-4 text-2xl sm:text-3xl font-semibold leading-snug">
                 <span class="i18n-id">Punya pertanyaan atau ingin berdiskusi?</span><span class="i18n-en">Any type of query &amp; discussion.</span>
             </h2>
-            <p class="mt-5 text-muted leading-relaxed">
+            <p class="mt-5 text-muted font-medium leading-relaxed">
                 <span class="i18n-id">Terbuka untuk kolaborasi, pekerjaan, atau sekadar ngobrol soal pengembangan aplikasi.</span><span class="i18n-en">Open to collaboration, job opportunities, or just a chat about app development.</span>
             </p>
 
@@ -318,7 +323,7 @@
             <blockquote class="mt-4 text-2xl sm:text-3xl font-semibold leading-snug">
                 <span class="i18n-id">Kode yang bersih dan arsitektur yang kuat adalah kunci aplikasi yang terus berkembang.</span><span class="i18n-en">Clean code and solid architecture are the key to apps that keep growing.</span>
             </blockquote>
-            <p class="mt-6 text-muted leading-relaxed"><span class="i18n-id">Saya adalah seorang Software Engineer lulusan Teknik Informatika tahun 2020 yang memiliki spesialisasi di bidang Android Development. Dengan pengalaman profesional selama 4 tahun, saya telah mendalami ekosistem pengembangan aplikasi mobile dari berbagai sudut pandang. Kemampuan teknis saya mencakup pengembangan Native (Java &amp; Kotlin) untuk performa maksimal, hingga solusi Cross-Platform (Flutter &amp; React Native) untuk efisiensi pengembangan. Saya percaya bahwa kode yang bersih dan arsitektur yang kuat adalah kunci untuk membangun aplikasi yang dapat terus berkembang di masa depan.</span><span class="i18n-en">I am a Software Engineer who graduated in Informatics Engineering in 2020, specializing in Android development. Over 4 years of professional experience, I have explored the mobile app ecosystem from many angles. My technical skills range from Native development (Java &amp; Kotlin) for maximum performance to Cross-Platform solutions (Flutter &amp; React Native) for development efficiency. I believe clean code and solid architecture are the key to building apps that can keep growing in the future.</span>
+            <p class="mt-6 text-muted font-medium leading-relaxed"><span class="i18n-id">Saya adalah seorang Software Engineer lulusan Teknik Informatika tahun 2020 yang memiliki spesialisasi di bidang Android Development. Dengan pengalaman profesional selama 4 tahun, saya telah mendalami ekosistem pengembangan aplikasi mobile dari berbagai sudut pandang. Kemampuan teknis saya mencakup pengembangan Native (Java &amp; Kotlin) untuk performa maksimal, hingga solusi Cross-Platform (Flutter &amp; React Native) untuk efisiensi pengembangan. Saya percaya bahwa kode yang bersih dan arsitektur yang kuat adalah kunci untuk membangun aplikasi yang dapat terus berkembang di masa depan.</span><span class="i18n-en">I am a Software Engineer who graduated in Informatics Engineering in 2020, specializing in Android development. Over 4 years of professional experience, I have explored the mobile app ecosystem from many angles. My technical skills range from Native development (Java &amp; Kotlin) for maximum performance to Cross-Platform solutions (Flutter &amp; React Native) for development efficiency. I believe clean code and solid architecture are the key to building apps that can keep growing in the future.</span>
 </p>
 
             <div class="mt-12 flex flex-wrap gap-x-14 gap-y-8">
@@ -375,9 +380,26 @@ function closeModal() {
                 });
             }
 
+            // Section yang sedang dilihat (yang melewati bawah navbar).
+            function currentSection() {
+                var sections = document.querySelectorAll('main section[id]');
+                for (var i = 0; i < sections.length; i++) {
+                    if (sections[i].getBoundingClientRect().bottom > 80) return sections[i];
+                }
+                return null;
+            }
+
             buttons.forEach(function (b) {
                 b.addEventListener('click', function () {
+                    // Panjang teks tiap bahasa beda, jadi tinggi halaman berubah.
+                    // Kunci posisi section yang sedang dilihat supaya tidak bergeser ke bawah navbar.
+                    var anchor = currentSection();
+                    var before = anchor ? anchor.getBoundingClientRect().top : 0;
                     apply(b.dataset.langSet);
+                    if (anchor) {
+                        var shift = anchor.getBoundingClientRect().top - before;
+                        if (shift) window.scrollBy({ top: shift, behavior: 'instant' });
+                    }
                     try { localStorage.setItem('lang', b.dataset.langSet); } catch (e) {}
                 });
             });
